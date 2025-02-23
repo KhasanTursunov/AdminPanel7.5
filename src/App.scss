@@ -1,0 +1,159 @@
+.links .active:hover {
+  color: red;
+}
+
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Inter", sans-serif;
+// }
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+$zero: #000000;
+$ffive: #f50e30;
+$f: #ffffff;
+$zeroeight: #00000080;
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_links .links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar_items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar_items1 {
+  display: flex;
+}
+.navbar_items2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.links li a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: 0.02em;
+  color: $zero;
+  transform: 0.3s linear;
+}
+
+.links li a:hover {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: 0.02em;
+  color: $ffive;
+  text-decoration: underline;
+}
+
+.navbar_items2 a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: $zero;
+  transform: 0.3s linear;
+}
+
+.navbar_items2 a:hover {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: $ffive;
+}
+
+
+.showcase {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.showcase_left h1 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 62px;
+  color: $zero;
+}
+
+.showcase_btn {
+  width: 312px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: $ffive;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s linear;
+  border: none;
+}
+
+.showcase_btn:hover {
+  background-color: $f;
+  color: $ffive;
+  border: 2px solid $ffive;
+}
+
+.showcase_left_and_right {
+  display: flex;
+  gap: 20px;
+}
+
+.showcase_left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.showcase_right {
+  width: 100%;
+}
+
+
+// 
+
+.admin_wrapper{
+  padding: 10px;
+}
+
+.admin_ul{
+  margin-top: 20px;
+}
+
+.car_holder{
+  margin-left: 10px;
+}
