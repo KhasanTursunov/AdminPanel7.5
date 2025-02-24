@@ -13,6 +13,8 @@ import Reports from '../pages/admin/Reports'
 import Analytics from '../pages/admin/Analytics'
 import Settings from '../pages/admin/Settings'
 import Notification from '../pages/admin/Notification'
+import Auth from '../pages/auth/Auth'
+import Login from '../pages/login/Login'
 
 const RouterMain = () => {
 	return (
@@ -20,17 +22,20 @@ const RouterMain = () => {
 			<Route path='/' element={<Layout />}>
 				<Route path='/' element={<Home />} />
 			</Route>
-			<Route path='admin' element={<Admin />}>
-				<Route path='cars' element={<Cars />} />
-				<Route path='createcar' element={<Createcar />} />
-				<Route path='documents' element={<Documents />} />
-				<Route path='employees' element={<Employees />} />
-				<Route path='orders' element={<Orders />} />
-				<Route path='payments' element={<Payments />} />
-				<Route path='reports' element={<Reports />} />
-				<Route path='analytics' element={<Analytics />} />
-				<Route path='settings' element={<Settings />} />
-				<Route path='notification' element={<Notification />} />
+				<Route path='login' element={<Login />} />
+			<Route path='/' element={<Auth/>}>
+				<Route path='admin' element={<Admin />}>
+					<Route path='cars' element={<Cars />} />
+					<Route path='createcar' element={<Createcar />} />
+					<Route path='documents' element={<Documents />} />
+					<Route path='employees' element={<Employees />} />
+					<Route path='orders' element={<Orders />} />
+					<Route path='payments' element={<Payments />} />
+					<Route path='reports' element={<Reports />} />
+					<Route path='analytics' element={<Analytics />} />
+					<Route path='settings' element={<Settings />} />
+					<Route path='notification' element={<Notification />} />
+				</Route>
 			</Route>
 		</Routes>
 	)
